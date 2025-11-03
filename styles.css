@@ -1,0 +1,89 @@
+
+:root {
+  --base-light-color: rgb(218, 222, 229);
+  --base-dark-color: rgb(18, 24, 39);
+}
+
+body {
+  height: 50vh;
+  background-color: var(--base-dark-color);
+  color: var(--base-light-color);
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+.header {
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.main-timer {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+button {
+  color: black;
+  border: none;
+  width: 150px;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(186, 186, 186);
+  margin-bottom: 50px;
+}
+
+#startBtn {
+  background-color: rgb(78, 211, 147);
+}
+
+#stopBtn {
+  background-color: rgb(200, 49, 49);
+}
+
+#resetBtn {
+  background-color: rgb(190, 190, 190);
+}
+
+#results {
+  text-align: center;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

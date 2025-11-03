@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How High?</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <div class="header align-center">
+    <h1>How High?</h1>
+    <h3>Calculate the height of a projectile with just a tap!</h3>
+  </div>
+
+  <div class="main-timer align-center">
+    <h1 id="timer">0.0s</h1>
+    <h2 id="results" class="animate__animated animate__rubberBand"></h2>
+    <button id="startBtn">
+      <i class="fa-solid fa-baseball fa-2x"></i>
+      <i class="fa-solid fa-arrow-up fa-2x"></i>
+    </button>
+    <button id="stopBtn" style="display: none;">
+      <i class="fa-solid fa-baseball fa-2x"></i>
+      <i class="fa-solid fa-arrow-down fa-2x"></i>
+    </button>
+    <button id="resetBtn" style="display: none;"><i class="fa-solid fa-rotate-right fa-2x"></i></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
